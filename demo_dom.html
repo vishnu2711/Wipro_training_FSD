@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <section>
+      <img src="hello.png" alt="Can't show image">
+
+      <p>
+        We will add a link to the <a href="https://www.mozilla.org/">Mozilla homepage</a>
+      </p>
+
+    </section>
+    <script>
+        const link = document.querySelector("a");
+      link.textContent = "Mozilla Developer Network";
+      link.href = "https://developer.mozilla.org";
+
+      const sect = document.querySelector("section");
+      const newPara = document.createElement("p");
+
+      newPara.textContent = "Welcome to DOM API";
+      sect.appendChild(newPara);
+
+    </script>
+
+
+
+  </body>
+</html>
